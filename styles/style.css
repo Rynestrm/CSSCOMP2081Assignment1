@@ -1,0 +1,92 @@
+/* Default styles */
+
+body {
+  /* is there a beter way to make the background faded out? */
+  /* image from https://unsplash.com/@dmey503 */
+  background-image: linear-gradient(#ffffff63, #ffffffc5),
+    url("../img/FarmBackground.jpg");
+  font-family: "Chilanka", cursive;
+}
+
+h1 {
+  font-family: "Homemade Apple", cursive;
+}
+h2,
+h3,
+h4 {
+  color: #000;
+  text-decoration: underline;
+}
+
+a,
+p {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+/* ----- Nav bar styles ----- */
+
+ul {
+  list-style: none;
+  padding-left: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+nav a {
+  padding: 0 5px;
+  margin: 0 5px;
+  color: #000;
+  text-decoration: none;
+  font-size: 30px;
+}
+
+.logo {
+  width: 200px;
+}
+
+/* end of nav bar styles */
+
+h1 {
+  display: flex;
+  justify-content: center;
+}
+
+main {
+  margin: 20px;
+}
+
+section {
+  background-color: #97d6e56e;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+}
+
+aside {
+  padding: 0 5px;
+}
+
+/* images */
+
+img {
+  max-width: 100%;
+}
+
+/* ----- break points ----- */
+
+@media (min-width: 660px) {
+  section {
+    flex-direction: row;
+  }
+
+  section:nth-child(2) {
+    flex-direction: row-reverse;
+  }
+
+  aside {
+    width: 50%;
+  }
+}
