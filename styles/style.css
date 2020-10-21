@@ -18,38 +18,52 @@ h4 {
   text-decoration: underline;
 }
 
-a,
 p {
   font-size: 18px;
   font-weight: 700;
 }
 
-/* ----- Nav bar styles ----- */
-
-ul {
-  list-style: none;
-  padding-left: 0;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0 20px;
-}
-
-nav a {
-  padding: 0 5px;
-  margin: 0 5px;
-  color: #000;
+/* links */
+a {
+  font-weight: 700;
+  font-size: 18px;
   text-decoration: none;
-  font-size: 30px;
+  outline: none;
+  transition-property: background-image;
+  transition-duration: 1s;
 }
 
-.logo {
-  width: 200px;
+a:visited {
+  color: #000;
+}
+
+/* ----- Nav bar styles ----- */
+.topNav {
+  display: none;
+}
+
+.mobileNav {
+  display: block;
+  background-image: linear-gradient(#ffffff93, #ffffff93),
+    url("../img/3moonscolour.webp");
+  background-position: center;
+  background-size: 1500px 1000px;
+  height: 150px;
+}
+
+.fa-bars {
+  display: flex;
+  justify-content: center;
+  font-size: 25px;
 }
 
 /* end of nav bar styles */
 
-h1 {
+.largeH1 {
+  display: none;
+}
+
+.smallH1 {
   display: flex;
   justify-content: center;
 }
@@ -63,6 +77,11 @@ section {
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
+  text-align: center;
+}
+
+section p {
+  justify-content: left;
 }
 
 aside {
@@ -88,5 +107,46 @@ img {
 
   aside {
     width: 50%;
+  }
+
+  .largeH1 {
+    display: flex;
+    justify-content: center;
+  }
+
+  /* Nav styles */
+  .mobileNav {
+    display: none;
+  }
+
+  .topNav {
+    display: block;
+  }
+  .topNav a:hover {
+    background-image: linear-gradient(#ffffff73, #ffffff73),
+      url("../img/3moonscolour.webp");
+    background-size: 300px 200px;
+    background-position: 210px 130px;
+  }
+
+  ul {
+    list-style: none;
+    padding-left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+  }
+
+  .topNav a {
+    padding: 0 5px;
+    margin: 0 5px;
+    color: #000;
+    text-decoration: none;
+    font-size: 30px;
+  }
+
+  .logo {
+    width: 200px;
   }
 }
