@@ -11,23 +11,31 @@
 </head>
 <body>
     <nav class="mobileNav">
+        <div id="overlay" class="hidden">
+            <ul>
+                <!-- <i class="fas fa-times"></i> -->
+                <li><a href="#jump1">Product</a></li></li>
+                <li><a href="#jump2">About</a></li>
+                <li><a href="#jump3">Contact</a></li>
+            </ul>
+        </div>
         <i class="fas fa-bars"></i>
         <h1 class="smallH1">3 Moons Organic Farm</h1>
     </nav>
     <nav class="topNav">
         <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="#">About</a></li>
-            <div>
-                <img class="logo" src="img/3moonscolour.webp" alt="">
-            </div>
-            <li><a href="#">Product</a></li>
-            <li><a href="#">Contact</a></li>
+            <!-- <li><a href="index.html">Home</a></li> -->
+            <li><a href="#jump1">Product</a></li>
+            <li>
+                <a href="index.html"><img class="logo" src="img/3moonscolour.webp" alt=""></a>
+            </li>
+            <li><a href="#jump2">About</a></li>
+            <li><a href="#jump3">Contact</a></li>
         </ul>
     </nav>
     <h1 class="largeH1">3 Moons Organic Farm</h1>
     <main>
-        <section class='product'> <!-- Start of Product section -->
+        <section id="jump1" class='product'> <!-- Start of Product section -->
             <aside>
                 <h2>Product</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio doloribus sit maxime eum suscipit vitae officia a amet error quidem iusto, deleniti ratione tempore doloremque voluptatibus eius voluptate neque eveniet nesciunt molestias pariatur exercitationem autem sequi. Rerum tenetur quam provident eligendi reiciendis, quibusdam voluptatem voluptatum eius. Perferendis, cum? Excepturi, deserunt!
@@ -39,7 +47,7 @@
                 <img src="img/productsImg.jpg" alt="organic produce market stall">
             </aside>
         </section><!-- End of Product section-->
-        <section class="about"><!-- Start of About section-->
+        <section id="jump2" class="about"><!-- Start of About section-->
             <aside>
                 <h2>About</h2>
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. In facilis voluptatibus doloribus error laboriosam, minus hic, amet necessitatibus rerum quisquam architecto laborum reprehenderit. Suscipit quam nemo architecto earum, dolorem, nostrum deserunt ipsam quae asperiores atque laborum voluptas necessitatibus officiis voluptatibus sit dolore reprehenderit exercitationem accusamus reiciendis! Harum aperiam magni possimus.</p>
@@ -50,7 +58,7 @@
                 <img src="img/aboutFamily.jpg" alt="Family stading near table full of food they grew">
             </aside>
         </section><!-- End of About section-->
-        <section class='contact'><!-- Start of Contact section-->
+        <section id="jump3" class='contact'><!-- Start of Contact section-->
             <aside>
                 <h2>Contact</h2>
                 <p>Give us a call</p>
@@ -65,13 +73,12 @@
                 </address>
             </aside>
             <aside>
-                <div>
-                    <!-- imgae from https://unsplash.com/@ptrikutam -->
-                    <img src="img/ContactImg.jpg" alt="Old rotery pay phones attached to a wall">
-                </div>
+                <!-- imgae from https://unsplash.com/@ptrikutam -->
+                <img src="img/ContactImg.jpg" alt="Old rotery pay phones attached to a wall">
             </aside>
         </section><!-- End of Contact Section-->
     </main>
     <script src="https://kit.fontawesome.com/b30d2ce0c6.js" crossorigin="anonymous"></script>
+    <script src="./JS/index.js"></script>
 </body>
 </html>
