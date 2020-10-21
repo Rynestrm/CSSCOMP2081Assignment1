@@ -1,6 +1,5 @@
 const navMenu = document.querySelector(".fa-bars");
 const overLay = document.querySelector("#overlay");
-const hamburger = document.querySelector(".fa-bars");
 const closeMenu = document.querySelector(".fa-times");
 
 
